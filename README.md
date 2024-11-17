@@ -1,7 +1,15 @@
+# PROJECT DESCRIPTION
 
-# Welcome to your CDK Python project!
+## Objective
+Calculate how much power each of a multitude of different powerplants need to produce (a.k.a. the production-plan) when the load is given and taking into account the cost of the underlying energy sources (gas, kerosine) and the Pmin and Pmax of each powerplant.
 
-This is a blank project for CDK development with Python.
+Build a REST API exposing an endpoint /productionplan that accepts a POST of which the body contains a payload as you can find in the example_payloads directory and that returns a json with the same structure as in example_response.json and that manages and logs run-time errors.
+
+For calculating the unit-commitment, we prefer you not to rely on an existing (linear-programming) solver but instead write an algorithm yourself.
+
+
+
+# CDK DEPLOYMENT INSTRUCTIONS
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
