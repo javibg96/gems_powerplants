@@ -7,6 +7,10 @@ Build a REST API exposing an endpoint /productionplan that accepts a POST of whi
 
 For calculating the unit-commitment, we prefer you not to rely on an existing (linear-programming) solver but instead write an algorithm yourself.
 
+## Definition
+the project consists in 2 different solutions:
+1. src -> solution designed focused on scalability, that consists on an API Gateway connected to a lambda that evaluates the optimal solution
+2. src_docker -> solution designed focused on the challenge definition, that consists on an dockerized lambda with an URL associated.
 
 
 # CDK DEPLOYMENT INSTRUCTIONS
